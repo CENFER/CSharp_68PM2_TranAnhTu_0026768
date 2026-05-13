@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\c#\QuanLySV\bin\Debug\QuanLySV.exe.config
+C:\Users\Admin\Desktop\c#\QuanLySV\bin\Debug\QuanLySV.exe
+C:\Users\Admin\Desktop\c#\QuanLySV\bin\Debug\QuanLySV.pdb
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.Form1.resources
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.Properties.Resources.resources
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.exe
+C:\Users\Admin\Desktop\c#\QuanLySV\obj\Debug\QuanLySV.pdb
