@@ -2,10 +2,15 @@ C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\bin\Debug\Quan
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\bin\Debug\QuanLySV.exe
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\bin\Debug\QuanLySV.pdb
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.Form1.resources
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.Properties.Resources.resources
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.exe
 C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.pdb
-C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.Quản_lý_Sinh_Viên.resources
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.UC_QLLH.resources
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.UC_QLSV.resources
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.form_login.resources
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\obj\Debug\QuanLySV.Main.resources
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\buildcheck\QuanLySV.exe.config
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\buildcheck\QuanLySV.exe
+C:\Users\Admin\Desktop\c#\CSharp_68PM2_TranAnhTu_0026768\QuanLySV\buildcheck\QuanLySV.pdb

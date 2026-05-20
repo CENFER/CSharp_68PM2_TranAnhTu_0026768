@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace QuanLySV
 {
-    public partial class Form1 : Form
+    public partial class form_login : Form
     {
-        public Form1()
+        public form_login()
         {
             InitializeComponent();
         }
@@ -31,6 +31,10 @@ namespace QuanLySV
             if (email == emailSV && password == mssv)
             {
                 MessageBox.Show("Đăng nhập thành công!");
+                Main main = new Main();
+                main.FormClosed += (s, args) => this.Close();
+                main.Show();
+                this.Hide();
             }
             else
             {

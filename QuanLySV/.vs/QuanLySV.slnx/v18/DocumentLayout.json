@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\qu\u1EA3n l\u00FD sinh vi\u00EAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:qu\u1EA3n l\u00FD sinh vi\u00EAn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\uc_qlsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:uc_qlsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\uc_qllh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:uc_qllh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\main.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:main.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\uc_qllh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:uc_qllh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|c:\\users\\admin\\desktop\\c#\\csharp_68pm2_trananhtu_0026768\\quanlysv\\uc_qllh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:uc_qllh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:form_login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{9D5C68CC-FAF8-4479-B1CF-F54732F8D80C}|QuanLySV.csproj|solutionrelative:form_login.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +62,170 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "DocumentIndex": 7,
+              "Title": "UC_QLLH.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.Designer.cs",
+              "RelativeDocumentMoniker": "UC_QLLH.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.Designer.cs",
+              "RelativeToolTip": "UC_QLLH.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T06:03:01.965Z",
+              "WhenOpened": "2026-05-20T03:52:31.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_QLLH.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.cs",
+              "RelativeDocumentMoniker": "UC_QLLH.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.cs",
+              "RelativeToolTip": "UC_QLLH.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:52:31.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.resx",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.resx",
+              "RelativeDocumentMoniker": "Main.resx",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.resx",
+              "RelativeToolTip": "Main.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-20T03:49:55.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "Main.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.Designer.cs",
+              "RelativeToolTip": "Main.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:49:48.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:49:48.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "Title": "UC_QLLH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.cs",
+              "RelativeDocumentMoniker": "UC_QLLH.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLLH.cs [Design]",
+              "RelativeToolTip": "UC_QLLH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T05:52:50.858Z",
+              "WhenOpened": "2026-05-20T03:49:48.492Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Main.cs [Design]",
+              "RelativeToolTip": "Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:49:48.493Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "form_login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs",
+              "RelativeDocumentMoniker": "form_login.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs [Design]",
+              "RelativeToolTip": "form_login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:20:34.433Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Qu\u1EA3n l\u00FD Sinh Vi\u00EAn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Qu\u1EA3n l\u00FD Sinh Vi\u00EAn.cs",
-              "RelativeDocumentMoniker": "Qu\u1EA3n l\u00FD Sinh Vi\u00EAn.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Qu\u1EA3n l\u00FD Sinh Vi\u00EAn.cs [Design]",
-              "RelativeToolTip": "Qu\u1EA3n l\u00FD Sinh Vi\u00EAn.cs [Design]",
+              "Title": "UC_QLSV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLSV.cs",
+              "RelativeDocumentMoniker": "UC_QLSV.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\UC_QLSV.cs [Design]",
+              "RelativeToolTip": "UC_QLSV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-16T05:33:58.584Z",
+              "WhenOpened": "2026-05-20T03:49:48.492Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:21:30.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "form_login.resx",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.resx",
+              "RelativeDocumentMoniker": "form_login.resx",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.resx",
+              "RelativeToolTip": "form_login.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-20T03:21:19.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "form_login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.Designer.cs",
+              "RelativeDocumentMoniker": "form_login.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.Designer.cs",
+              "RelativeToolTip": "form_login.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:21:18.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "form_login.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs",
+              "RelativeDocumentMoniker": "form_login.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\c#\\CSharp_68PM2_TranAnhTu_0026768\\QuanLySV\\form_login.cs",
+              "RelativeToolTip": "form_login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T03:20:47.449Z",
+              "EditorCaption": ""
             }
           ]
         }
