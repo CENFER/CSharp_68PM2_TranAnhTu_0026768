@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="database">
+  <DataContextMoniker Name="/databaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="51b63bc5-b420-4e08-a10d-e7ce6c7a4302" absoluteBounds="2.125, 2, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/databaseDataContext/tbl_lophoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d91e58dd-1f3c-48c4-8ef4-b9ea2096ad45" absoluteBounds="2.1399999999999997, 2.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc3abaf9-efab-48ea-bc72-2186c3c0186e" absoluteBounds="6.375, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/databaseDataContext/tbl_sinhvien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb6c48f4-9fce-4769-a898-13cc8c872f61" absoluteBounds="6.3900000000000006, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 2.78929768880208); (6.375 : 2.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/databaseDataContext/tbl_lophoc/tbl_lophoc_tbl_sinhvien" />
+      <nodes>
+        <classShapeMoniker Id="51b63bc5-b420-4e08-a10d-e7ce6c7a4302" />
+        <classShapeMoniker Id="bc3abaf9-efab-48ea-bc72-2186c3c0186e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
