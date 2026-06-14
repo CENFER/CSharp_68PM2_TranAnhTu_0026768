@@ -14,6 +14,10 @@ namespace QuanLySV
     public partial class UC_QLSV : UserControl
     {
         private databaseDataContext db = new databaseDataContext();
+        private const int pageSize = 10;
+        private int currentPage = 1;
+        private int totalPages = 1;
+        private int totalRecords = 0;
 
         public UC_QLSV()
         {
@@ -23,6 +27,11 @@ namespace QuanLySV
             button2.Click += button2_Click;
             button3.Click += button3_Click;
             button4.Click += button4_Click;
+            button5.Click += button5_Click;
+            button7.Click += button7_Click;
+            button8.Click += button8_Click;
+            button9.Click += button9_Click;
+            button10.Click += button10_Click;
 
             dgv_DSSV.ReadOnly = true;
             dgv_DSSV.MultiSelect = false;
@@ -43,7 +52,7 @@ namespace QuanLySV
         {
             if (cboMaLop.SelectedValue == null)
             {
-                MessageBox.Show("Vui l?ng ch?n m? l?p!");
+                MessageBox.Show("Vui lòng chọn mã lớp!");
                 return;
             }
 
@@ -71,14 +80,13 @@ namespace QuanLySV
             }
         }
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             string maSV = txtMSSV.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(maSV))
             {
-                MessageBox.Show("Vui l?ng ch?n sinh vi?n c?n s?a!");
+                MessageBox.Show("Vui lòng chọn sinh viên cần sửa!");
                 return;
             }
 
@@ -86,7 +94,7 @@ namespace QuanLySV
 
             if (sinhvien == null)
             {
-                MessageBox.Show("Kh?ng t?m th?y sinh vi?n!");
+                MessageBox.Show("Không tìm thấy sinh viên!");
                 return;
             }
 
@@ -98,7 +106,7 @@ namespace QuanLySV
                 sinhvien.tbl_lophoc = db.tbl_lophocs.FirstOrDefault(lh => lh.MaLop == cboMaLop.SelectedValue.ToString());
 
                 db.SubmitChanges();
-                MessageBox.Show("S?a sinh vi?n th?nh c?ng!");
+                MessageBox.Show("Sửa sinh viên thành công!");
                 LoadData();
             }
             catch (Exception ex)
@@ -109,17 +117,18 @@ namespace QuanLySV
                 MessageBox.Show(ex.Message);
             }
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             string maSV = txtMSSV.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(maSV))
             {
-                MessageBox.Show("Vui l?ng ch?n sinh vi?n c?n x?a!");
+                MessageBox.Show("Vui lòng chọn sinh viên cần xóa!");
                 return;
             }
 
-            DialogResult result = MessageBox.Show("B?n c? ch?c mu?n x?a sinh vi?n n?y?", "X?c nh?n", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn xóa sinh viên này?", "Xác nhận", MessageBoxButtons.YesNo);
 
             if (result != DialogResult.Yes)
             {
@@ -132,13 +141,13 @@ namespace QuanLySV
 
                 if (sinhvien == null)
                 {
-                    MessageBox.Show("Kh?ng t?m th?y sinh vi?n!");
+                    MessageBox.Show("Không tìm thấy sinh viên!");
                     return;
                 }
 
                 db.tbl_sinhviens.DeleteOnSubmit(sinhvien);
                 db.SubmitChanges();
-                MessageBox.Show("X?a sinh vi?n th?nh c?ng!");
+                MessageBox.Show("Xóa sinh viên thành công!");
                 LamMoiThongTin();
             }
             catch (Exception ex)
@@ -154,6 +163,43 @@ namespace QuanLySV
         {
             LamMoiThongTin();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            currentPage = 1;
+            LoadData();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            currentPage = 1;
+            LoadData();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (currentPage > 1)
+            {
+                currentPage--;
+                LoadData();
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            currentPage = totalPages;
+            LoadData();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (currentPage < totalPages)
+            {
+                currentPage++;
+                LoadData();
+            }
+        }
+
         private void dgv_DSSV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
@@ -170,6 +216,7 @@ namespace QuanLySV
             cboMaLop.SelectedValue = row.Cells["MaLop"].Value.ToString();
             txtMSSV.Enabled = false;
         }
+
         public void LoadLopHoc()
         {
             var lopHocs = db.tbl_lophocs
@@ -185,7 +232,30 @@ namespace QuanLySV
 
         public void LoadData()
         {
-            dgv_DSSV.DataSource = db.tbl_sinhviens.Select(sv => new
+            string keyword = textBox1.Text.Trim();
+            var query = db.tbl_sinhviens.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                query = query.Where(sv => sv.MaSV.Contains(keyword)
+                    || sv.HovaTen.Contains(keyword)
+                    || sv.MaLop.Contains(keyword)
+                    || sv.tbl_lophoc.TenLop.Contains(keyword));
+            }
+
+            totalRecords = query.Count();
+            totalPages = Math.Max(1, (int)Math.Ceiling((double)totalRecords / pageSize));
+
+            if (currentPage > totalPages)
+            {
+                currentPage = totalPages;
+            }
+
+            dgv_DSSV.DataSource = query
+                .OrderBy(sv => sv.MaSV)
+                .Skip((currentPage - 1) * pageSize)
+                .Take(pageSize)
+                .Select(sv => new
             {
                 sv.MaSV,
                 sv.HovaTen,
@@ -194,7 +264,21 @@ namespace QuanLySV
                 sv.MaLop,
                 sv.tbl_lophoc.TenLop
             }).ToList();
+
+            HienThiPhanTrang();
         }
+
+        private void HienThiPhanTrang()
+        {
+            label21.Text = "Trang " + currentPage + "/" + totalPages;
+            label22.Text = totalRecords + " Bản ghi";
+
+            button7.Enabled = currentPage > 1;
+            button8.Enabled = currentPage > 1;
+            button9.Enabled = currentPage < totalPages;
+            button10.Enabled = currentPage < totalPages;
+        }
+
         private void LamMoiThongTin()
         {
             txtMSSV.Clear();
@@ -203,12 +287,11 @@ namespace QuanLySV
             DT_NgaySinh.Value = DateTime.Today;
             textBox1.Clear();
             txtMSSV.Enabled = true;
+            currentPage = 1;
             LoadLopHoc();
             cboMaLop.SelectedIndex = -1;
             LoadData();
         }
+
     }
 }
-
-
-
