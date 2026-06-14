@@ -20,6 +20,7 @@ namespace QuanLySV
             InitializeComponent();
             Load += UC_QLSV_Load;
             dgv_DSSV.CellClick += dgv_DSSV_CellClick;
+            button2.Click += button2_Click;
 
             dgv_DSSV.ReadOnly = true;
             dgv_DSSV.MultiSelect = false;
@@ -38,11 +39,16 @@ namespace QuanLySV
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (cboMaLop.SelectedValue == null)
+            {
+                MessageBox.Show("Vui l?ng ch?n m? l?p!");
+                return;
+            }
 
             tbl_sinhvien sinhvien = new tbl_sinhvien();
 
-            sinhvien.MaSV = txtMSSV.Text;
-            sinhvien.HovaTen = txtHoTen.Text;
+            sinhvien.MaSV = txtMSSV.Text.Trim();
+            sinhvien.HovaTen = txtHoTen.Text.Trim();
             sinhvien.Gioitinh = cboGioiTinh.Text;
             sinhvien.NgaySinh = DT_NgaySinh.Value.Date;
             sinhvien.MaLop = cboMaLop.SelectedValue.ToString();
@@ -56,14 +62,51 @@ namespace QuanLySV
             }
             catch (Exception ex)
             {
+                db = new databaseDataContext();
+                LoadLopHoc();
+                LoadData();
                 MessageBox.Show(ex.Message);
             }
-            db.tbl_sinhviens.InsertOnSubmit(sinhvien);
-            db.SubmitChanges();
-            LoadData();
         }
 
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string maSV = txtMSSV.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(maSV))
+            {
+                MessageBox.Show("Vui l?ng ch?n sinh vi?n c?n s?a!");
+                return;
+            }
+
+            tbl_sinhvien sinhvien = db.tbl_sinhviens.FirstOrDefault(sv => sv.MaSV == maSV);
+
+            if (sinhvien == null)
+            {
+                MessageBox.Show("Kh?ng t?m th?y sinh vi?n!");
+                return;
+            }
+
+            try
+            {
+                sinhvien.HovaTen = txtHoTen.Text.Trim();
+                sinhvien.Gioitinh = cboGioiTinh.Text;
+                sinhvien.NgaySinh = DT_NgaySinh.Value.Date;
+                sinhvien.tbl_lophoc = db.tbl_lophocs.FirstOrDefault(lh => lh.MaLop == cboMaLop.SelectedValue.ToString());
+
+                db.SubmitChanges();
+                MessageBox.Show("S?a sinh vi?n th?nh c?ng!");
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                db = new databaseDataContext();
+                LoadLopHoc();
+                LoadData();
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void dgv_DSSV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
@@ -108,4 +151,5 @@ namespace QuanLySV
 
     }
 }
+
 
