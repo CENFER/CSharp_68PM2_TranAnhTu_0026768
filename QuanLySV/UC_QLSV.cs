@@ -19,6 +19,12 @@ namespace QuanLySV
         {
             InitializeComponent();
             Load += UC_QLSV_Load;
+            dgv_DSSV.CellClick += dgv_DSSV_CellClick;
+
+            dgv_DSSV.ReadOnly = true;
+            dgv_DSSV.MultiSelect = false;
+            dgv_DSSV.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv_DSSV.AllowUserToAddRows = false;
         }
 
         private void UC_QLSV_Load(object sender, EventArgs e)
@@ -58,6 +64,22 @@ namespace QuanLySV
         }
 
 
+        private void dgv_DSSV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+
+            DataGridViewRow row = dgv_DSSV.Rows[e.RowIndex];
+
+            txtMSSV.Text = row.Cells["MaSV"].Value.ToString();
+            txtHoTen.Text = row.Cells["HovaTen"].Value.ToString();
+            cboGioiTinh.Text = row.Cells["Gioitinh"].Value.ToString();
+            DT_NgaySinh.Value = Convert.ToDateTime(row.Cells["NgaySinh"].Value);
+            cboMaLop.SelectedValue = row.Cells["MaLop"].Value.ToString();
+            txtMSSV.Enabled = false;
+        }
         public void LoadLopHoc()
         {
             var lopHocs = db.tbl_lophocs
@@ -86,3 +108,4 @@ namespace QuanLySV
 
     }
 }
+
