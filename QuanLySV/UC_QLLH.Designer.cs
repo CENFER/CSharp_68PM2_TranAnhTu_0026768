@@ -54,6 +54,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgv_QLLH = new System.Windows.Forms.DataGridView();
+            this.btn_DSSV = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLLH)).BeginInit();
             this.SuspendLayout();
@@ -163,7 +164,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(183, 548);
+            this.button4.Location = new System.Drawing.Point(184, 484);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(179, 58);
             this.button4.TabIndex = 34;
@@ -175,7 +176,7 @@
             this.button3.BackColor = System.Drawing.Color.Red;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(1, 548);
+            this.button3.Location = new System.Drawing.Point(1, 484);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(179, 58);
             this.button3.TabIndex = 33;
@@ -283,7 +284,7 @@
             this.button2.BackColor = System.Drawing.Color.Green;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(183, 484);
+            this.button2.Location = new System.Drawing.Point(184, 420);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 58);
             this.button2.TabIndex = 32;
@@ -295,7 +296,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(-2, 484);
+            this.button1.Location = new System.Drawing.Point(0, 420);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 58);
             this.button1.TabIndex = 31;
@@ -310,10 +311,23 @@
             this.dgv_QLLH.Size = new System.Drawing.Size(542, 444);
             this.dgv_QLLH.TabIndex = 47;
             // 
+            // btn_DSSV
+            // 
+            this.btn_DSSV.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_DSSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DSSV.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_DSSV.Location = new System.Drawing.Point(3, 548);
+            this.btn_DSSV.Name = "btn_DSSV";
+            this.btn_DSSV.Size = new System.Drawing.Size(359, 58);
+            this.btn_DSSV.TabIndex = 48;
+            this.btn_DSSV.Text = "Xem danh sách sinh viên";
+            this.btn_DSSV.UseVisualStyleBackColor = false;
+            // 
             // UC_QLLH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_DSSV);
             this.Controls.Add(this.dgv_QLLH);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -368,5 +382,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgv_QLLH;
+        private System.Windows.Forms.Button btn_DSSV;
     }
 }

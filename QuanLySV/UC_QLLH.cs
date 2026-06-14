@@ -30,6 +30,7 @@ namespace QuanLySV
             button8.Click += button8_Click;
             button9.Click += button9_Click;
             button10.Click += button10_Click;
+            btn_DSSV.Click += btn_DSSV_Click;
             dgv_QLLH.CellClick += dgv_QLLH_CellClick;
 
             textBox4.Enabled = false;
@@ -256,6 +257,53 @@ namespace QuanLySV
             button8.Enabled = currentPage > 1;
             button9.Enabled = currentPage < totalPages;
             button10.Enabled = currentPage < totalPages;
+        }
+
+        private void btn_DSSV_Click(object sender, EventArgs e)
+        {
+            string maLop = textBox5.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(maLop)
+                && dgv_QLLH.CurrentRow != null
+                && dgv_QLLH.Columns.Contains("MaLop"))
+            {
+                object value = dgv_QLLH.CurrentRow.Cells["MaLop"].Value;
+                maLop = value == null ? "" : value.ToString();
+            }
+
+            if (string.IsNullOrWhiteSpace(maLop))
+            {
+                MessageBox.Show("Vui lòng chọn lớp học cần xem sinh viên!");
+                return;
+            }
+
+            var sinhViens = db.tbl_sinhviens
+                .Where(sv => sv.MaLop == maLop)
+                .Select(sv => new
+                {
+                    sv.MaSV,
+                    sv.HovaTen,
+                    sv.Gioitinh,
+                    sv.NgaySinh,
+                    sv.MaLop
+                }).ToList();
+
+            Form formDSSV = new Form();
+            formDSSV.Text = "Danh sách sinh viên lớp " + maLop;
+            formDSSV.StartPosition = FormStartPosition.CenterParent;
+            formDSSV.Size = new Size(800, 450);
+
+            DataGridView dgvSinhVien = new DataGridView();
+            dgvSinhVien.Dock = DockStyle.Fill;
+            dgvSinhVien.ReadOnly = true;
+            dgvSinhVien.MultiSelect = false;
+            dgvSinhVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSinhVien.AllowUserToAddRows = false;
+            dgvSinhVien.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSinhVien.DataSource = sinhViens;
+
+            formDSSV.Controls.Add(dgvSinhVien);
+            formDSSV.ShowDialog();
         }
 
         private void LamMoiThongTin()
