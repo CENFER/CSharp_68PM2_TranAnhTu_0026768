@@ -21,6 +21,8 @@ namespace QuanLySV
             Load += UC_QLSV_Load;
             dgv_DSSV.CellClick += dgv_DSSV_CellClick;
             button2.Click += button2_Click;
+            button3.Click += button3_Click;
+            button4.Click += button4_Click;
 
             dgv_DSSV.ReadOnly = true;
             dgv_DSSV.MultiSelect = false;
@@ -107,6 +109,51 @@ namespace QuanLySV
                 MessageBox.Show(ex.Message);
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string maSV = txtMSSV.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(maSV))
+            {
+                MessageBox.Show("Vui l?ng ch?n sinh vi?n c?n x?a!");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("B?n c? ch?c mu?n x?a sinh vi?n n?y?", "X?c nh?n", MessageBoxButtons.YesNo);
+
+            if (result != DialogResult.Yes)
+            {
+                return;
+            }
+
+            try
+            {
+                tbl_sinhvien sinhvien = db.tbl_sinhviens.FirstOrDefault(sv => sv.MaSV == maSV);
+
+                if (sinhvien == null)
+                {
+                    MessageBox.Show("Kh?ng t?m th?y sinh vi?n!");
+                    return;
+                }
+
+                db.tbl_sinhviens.DeleteOnSubmit(sinhvien);
+                db.SubmitChanges();
+                MessageBox.Show("X?a sinh vi?n th?nh c?ng!");
+                LamMoiThongTin();
+            }
+            catch (Exception ex)
+            {
+                db = new databaseDataContext();
+                LoadLopHoc();
+                LoadData();
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LamMoiThongTin();
+        }
         private void dgv_DSSV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
@@ -148,8 +195,20 @@ namespace QuanLySV
                 sv.tbl_lophoc.TenLop
             }).ToList();
         }
-
+        private void LamMoiThongTin()
+        {
+            txtMSSV.Clear();
+            txtHoTen.Clear();
+            cboGioiTinh.SelectedIndex = -1;
+            DT_NgaySinh.Value = DateTime.Today;
+            textBox1.Clear();
+            txtMSSV.Enabled = true;
+            LoadLopHoc();
+            cboMaLop.SelectedIndex = -1;
+            LoadData();
+        }
     }
 }
+
 
 
